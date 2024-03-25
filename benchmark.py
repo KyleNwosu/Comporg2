@@ -1,10 +1,10 @@
+import time 
 import random
 
-import timeit
-def additions():
-    a = random.randint(0,2**31)
-    b = random.randint(0,2**31)
-    a+b
+def addition():
+    
 
-print(timeit.timeit(additions))
-        
+maxtime = int(input(10))
+starttime =  time.time()
+while (time.time()-starttime)< maxtime:
+    
