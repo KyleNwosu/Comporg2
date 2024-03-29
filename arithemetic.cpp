@@ -1,12 +1,20 @@
 #include <iostream>
-#include <cmath> // Include the <cmath> header for the pow() function
+#include <cmath> 
+#include <chrono>
 using namespace std;
+using namespace std:: chrono;
+
+
+
+
+void Integerbenchmark(){
+    int val;
+  
+    for (int i =0; i < pow(10,10); i++){
+        val = 1+1;
+    }
+
 
 int main(){
-    int a = 1;
-    int b = 1; // Declare the variable 'b'
-    for (int i =0; i < pow(10,10); i++){
-        int sum = a + b;
-    }
-    return 0;
+
 }
