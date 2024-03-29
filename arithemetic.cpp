@@ -15,18 +15,18 @@ void Benchmark(){
     }
 
 
-    for (int i = 0; i < 5; i++){
-        for (int j = 0; j < pow(10,9); j++){
-            result = 1 * 1;
-        }
-    }
+    // for (int i = 0; i < 5; i++){
+    //     for (int j = 0; j < pow(10,9); j++){
+    //         result = 1 * 1;
+    //     }
+    // }
 
 
-    for (int i =0; i < 2; i++){
-        for (int j = 0; j < pow(10,9); j++){
-            result = 1/1;
-        }
-    }
+    // for (int i =0; i < 2; i++){
+    //     for (int j = 0; j < pow(10,9); j++){
+    //         result = 1/1;
+    //     }
+    // }
 
     cout << "Finished";
 
@@ -34,15 +34,15 @@ void Benchmark(){
 
 int main(){
 
-    std:: chrono::time_point<std::chrono::system_clock> start, end;
-    start = std::chrono::system_clock::now();
+    auto beg  = high_resolution_clock::now();
     Benchmark();
-    end = std::chrono::system_clock::now();
+    auto end = high_resolution_clock::now();
 
-    std::chrono::duration<double> elapsed_seconds = end - start;
-    std::time_t end_time = std::chrono::system_clock::to_time_t(end);
+    auto elapsed = duration_cast<milliseconds>(end - beg);
 
-    cout << "Finished computation at " << std::ctime(&end_time) << "elapsed time: " << elapsed_seconds.count() << "s\n";
+    double seconds = elapsed.count()/1000.0;
+    int minutes = seconds/60;
 
-    return 0;
+    cout << "Time taken: " << seconds << " seconds" << endl;
+
 }
