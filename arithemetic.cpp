@@ -14,7 +14,21 @@ void Integerbenchmark(){
         val = 1+1;
     }
 
+     for (int i =0; i < 5; i++){
+        for (int j = 0; j < pow(10,9); j++){
+                    val = 1 * 1;
+
+        }
+    }
+     for (int i =0; i < 2; i++){
+        for (int j = 0; j< pow(10,9);j++){
+            val = 1/1;
+    }
+}
+
 
 int main(){
+    Integerbenchmark();
+    return 0;
 
 }
