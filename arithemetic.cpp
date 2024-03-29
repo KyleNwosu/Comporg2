@@ -5,30 +5,32 @@ using namespace std;
 using namespace std:: chrono;
 
 
+void Integer();
 
 
-void Integerbenchmark(){
-    int val;
-  
-    for (int i =0; i < pow(10,10); i++){
-        val = 1+1;
-    }
-
-     for (int i =0; i < 5; i++){
-        for (int j = 0; j < pow(10,9); j++){
-                    val = 1 * 1;
-
-        }
-    }
-     for (int i =0; i < 2; i++){
-        for (int j = 0; j< pow(10,9);j++){
-            val = 1/1;
-        }
-    }
-}
 
 int main(){
-    Integerbenchmark();
-    return 0;
+    Integer();
+
+
+}
+
+void Integer(){
+    int result;
+    for (int i = 0; i< pow(10,10); i++){
+        result = 1 + 1;
+    }
+
+    for (int i = 0; i < 5; i++){
+        for (int j = 0; j < pow(10,9); j++){
+            result = 1 * 1;
+        }
+    }
+    
+    for (int i =0; i < 2; i++){
+        for (int j = 0; j < pow(10,9); j++){
+            result = 1/1;
+        }
+    }
 
 }
