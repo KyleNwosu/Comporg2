@@ -25,3 +25,18 @@ void Benchmark(){
     }
     cout << "Finished";
 }
+
+
+int main(){
+    
+        auto beg = high_resolution_clock::now();
+        Benchmark();
+        auto end = high_resolution_clock::now();
+    
+        auto elapsed = duration_cast<milliseconds>(end - beg);
+    
+        double seconds = elapsed.count()/1000.0;
+        int minutes = seconds/60;
+    
+        cout << "Time taken: " << seconds << " seconds" << endl;
+}
