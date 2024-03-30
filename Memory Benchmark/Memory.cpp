@@ -26,6 +26,7 @@ void MemoryBenchmark(char * txt){
 }
 
 int main(){
+
     char text[100];
     for (int i = 0; i<100; i++){
         text[i] = 'L';
