@@ -7,7 +7,7 @@ using namespace std;
 using namespace std::chrono;
 
 
-void MemoryBenchmark(char * txt){
+void StorageBenchmark(char * txt){
     fstream file;
     file.open(txt, ios::out | ios::app | ios::binary);
 
@@ -32,7 +32,7 @@ int main(){
         text[i] = ' ';
     }
     auto beg = high_resolution_clock::now();
-    MemoryBenchmark(text);
+    StorageBenchmark(text);
     auto end = high_resolution_clock::now();
     auto time = duration_cast<microseconds>(end - beg);
 
