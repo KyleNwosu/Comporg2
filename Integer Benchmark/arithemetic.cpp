@@ -15,7 +15,7 @@ int main(){
     int32_t b = 1;
 
     int32_t result;
-    cout << "Starting\n";
+    cout << "Integer\n";
     auto beg  = high_resolution_clock::now();
     for (int i = 0; i <10; i++){
         for (int j = 0; j < pow(10,10);j++  ){

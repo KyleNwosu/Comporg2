@@ -23,10 +23,10 @@ void MemoryBenchmark1(){
 }
 
 int main(){
-    cout << "Starting" << endl;
+    cout << "Memory" << endl;
     auto start = high_resolution_clock::now();
     MemoryBenchmark1();
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
-    cout << "Time taken by MemoryBenchmark1: " << duration.count() << " microseconds" << endl;
+    cout << "Time taken by MemoryBenchmark: " << duration.count() << " microseconds" << endl;
 }

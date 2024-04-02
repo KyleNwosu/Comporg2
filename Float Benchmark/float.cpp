@@ -8,7 +8,6 @@ using namespace std::chrono;
 void Benchmark(){
     float result;
 
-    cout << "Starting";
     for (int i = 0; i< pow(10,10); i++){
         result = 1.0 + 1.0;
     }
@@ -23,12 +22,11 @@ void Benchmark(){
 
         }
     }
-    cout << "Finished";
 }
 
 
 int main(){
-    
+        cout << "Float" << endl;
         auto beg = high_resolution_clock::now();
         Benchmark();
         auto end = high_resolution_clock::now();

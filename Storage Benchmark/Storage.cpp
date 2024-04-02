@@ -26,7 +26,7 @@ void StorageBenchmark(char * txt){
 }
 
 int main(){
-    cout << "Starting" << endl;
+    cout << "Storage1" << endl;
     char text[100];
     for (int i = 0; i<100; i++){
         text[i] = ' ';
