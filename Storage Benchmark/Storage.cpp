@@ -26,10 +26,10 @@ void MemoryBenchmark(char * txt){
 }
 
 int main(){
-
+    cout << "Starting" << endl;
     char text[100];
     for (int i = 0; i<100; i++){
-        text[i] = 'L';
+        text[i] = ' ';
     }
     auto beg = high_resolution_clock::now();
     MemoryBenchmark(text);
